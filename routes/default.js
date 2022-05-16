@@ -7,7 +7,7 @@ router.get("/index", function (req, res) {
   //  .render() will use ejs engine to parse that tamplate file and send as response
   // we pass file name
 });
-router.get("", function (req, res) {
+router.get("/", function (req, res) {
   res.redirect("/index");
 });
 router.get("/about", function (req, res) {
