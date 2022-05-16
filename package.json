@@ -8,16 +8,19 @@
   "keywords": [],
   "license": "MIT",
   "main": "app.js",
-  "packages": {},
-  "devDependencies": {
-    "nodemon": "^2.0.15"
+  "engines": {
+    "node": "17.x"
   },
+  "packages": {},
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js"
   },
   "dependencies": {
     "ejs": "^3.1.6",
     "express": "^4.17.3",
     "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
   }
 }

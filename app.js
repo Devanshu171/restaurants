@@ -15,6 +15,12 @@ const defaultRoutes = require("./routes/default");
 // importing default routes from 'default'
 const restaurantsRoutes = require("./routes/restaurants");
 // importing default routes from 'default'
+
+let port = 3000;
+
+if (process.env.PORT) {
+  port = process.env.PORT;
+}
 const app = express();
 // calling express as it a function
 
@@ -62,4 +68,4 @@ app.use(function (req, res) {
 app.use(function (error, req, res, next) {
   res.status(500).render("500");
 });
-app.listen(3000);
+app.listen(port);
